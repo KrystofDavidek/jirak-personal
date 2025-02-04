@@ -10,30 +10,22 @@ const practice = () => {
   return (
     <>
       <Head>
-        <title>Má praxe | Psycholog a terapeut, Brno - Mgr. Petr Davídek</title>
-        <meta
-          name="description"
-          content="Terapie pro děti a dospělé s psychosomatickými obtížemi, ADHD, úzkostmi, konflikty a nespokojensoti ve vztazích v Brně."
-        />
+        <title>Má praxe | CERTIFIKOVANÝ MASÉR, HLINSKO - Bc. Martin Jirák</title>
+        <meta name="description" content="Certifikované masáže pro dospělé v poliklinice Hlinsko" />
         <link rel="canonical" href="https://www.psycholog-terapeut-brno.cz/praxe" />
-        <meta property="og:title" content="Má praxe | Psycholog a terapeut, Brno - Mgr. Petr Davídek" />
-        <meta
-          property="og:description"
-          content="Terapie pro děti a dospělé s psychosomatickými obtížemi, ADHD, úzkostmi, konflikty a nespokojensoti ve vztazích v Brně."
-        />
-        <meta property="og:image" content="https://www.psycholog-terapeut-brno.cz/static/images/profilovka-orez.png" />
+        <meta property="og:title" content="Má praxe | CERTIFIKOVANÝ MASÉR, HLINSKO - Bc. Martin Jirák" />
+        <meta property="og:description" content="Certifikované masáže pro dospělé v poliklinice Hlinsko" />
+        <meta property="og:image" content="https://www.psycholog-terapeut-brno.cz/static/images/profilovka-jirak.jpg" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.psycholog-terapeut-brno.cz/praxe" />
         <meta property="og:site_name" content="mobil kontakty" />
 
-        <meta name="google-site-verification" content="UvZqrbMejlIe7mEjOSxw4U0mtpgAkh_6HO9UIFEFHII" />
+        {/* <meta name="google-site-verification" content="UvZqrbMejlIe7mEjOSxw4U0mtpgAkh_6HO9UIFEFHII" /> */}
+
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Má praxe | Psycholog a terapeut, Brno - Mgr. Petr Davídek" />
-        <meta
-          name="twitter:description"
-          content="Terapie pro děti a dospělé s psychosomatickými obtížemi, ADHD, úzkostmi, konflikty a nespokojensoti ve vztazích v Brně."
-        />
-        <meta name="twitter:image" content="https://www.psycholog-terapeut-brno.cz/static/images/profilovka-orez.png" />
+        <meta name="twitter:title" content="Má praxe | CERTIFIKOVANÝ MASÉR, HLINSKO - Bc. Martin Jirák" />
+        <meta name="twitter:description" content="Certifikované masáže pro dospělé v poliklinice Hlinsko" />
+        <meta name="twitter:image" content="https://www.psycholog-terapeut-brno.cz/static/images/profilovka-jirak.jpg" />
         <link
           rel="preload"
           as="font"

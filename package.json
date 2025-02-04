@@ -1,5 +1,5 @@
 {
-  "name": "psycholog-personal",
+  "name": "jirak-personal",
   "private": true,
   "scripts": {
     "dev": "next dev",

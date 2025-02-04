@@ -1,1 +1,1 @@
-This is a project for my older brother!
+This is a project for my good friend!
