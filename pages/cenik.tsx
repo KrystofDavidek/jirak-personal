@@ -1,13 +1,8 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import Head from 'next/head'
-import { default as Image } from 'next/image'
 import React from 'react'
-import ProfileImg from '../assets/profilovka-jirak.jpg'
-import useWindowDimensions from '../hooks/useWindowDimension'
 
 const cenik = () => {
-  const { width } = useWindowDimensions()
-
   return (
     <div>
       <Head>
