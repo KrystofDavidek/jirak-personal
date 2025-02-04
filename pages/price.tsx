@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import React from 'react'
 
-const cenik = () => {
+const price = () => {
   return (
     <div>
       <Head>
@@ -63,4 +63,4 @@ const cenik = () => {
   )
 }
 
-export default cenik
+export default price

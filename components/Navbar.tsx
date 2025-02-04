@@ -8,7 +8,7 @@ import useWindowDimensions from '../hooks/useWindowDimension'
 
 const routes = {
   '': '',
-  cenik: 'ceník',
+  price: 'price',
   contact: 'kontakt'
 }
 
@@ -84,10 +84,6 @@ const Navbar = () => {
       setActiveItem('O mně')
       return
     }
-    if (router.asPath === '/cen%C3%ADk') {
-      setActiveItem('Ceník')
-      return
-    }
     if (router.asPath === '/kontakt') {
       setActiveItem('Kontakt')
       return
@@ -96,7 +92,7 @@ const Navbar = () => {
 
   useEffect(() => {
     if (pathname === '/') setActiveItem('O mně')
-    if (pathname === '/ceník') setActiveItem('Ceník')
+    if (pathname === '/price') setActiveItem('Ceník')
     if (pathname === '/kontakt') setActiveItem('Kontakt')
   }, [])
 
@@ -109,7 +105,7 @@ const Navbar = () => {
       <div className="items-center hidden ml-auto align-middle lg:flex ">
         <div className="items-center hidden ml-auto space-x-8 align-middle lg:flex ">
           <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="O mně" routeName="" />
-          <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Ceník" routeName="cenik" />
+          <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Ceník" routeName="price" />
           <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Kontakt" routeName="contact" />
         </div>
         <div className="font-bold hidden xl:flex flex-col max-w-[15rem] text-font-green">
@@ -130,7 +126,7 @@ const SideMenu: FC<{ activeItem: string; setActiveItem: Function }> = ({ activeI
     <div className="fixed top-0 left-0 z-20 w-1/2 h-screen p-4 bg-font-green/95 sm:w-1/4 lg:hidden">
       <ul className="flex flex-col text-[1.5rem] gap-4">
         <NavItem isSide activeItem={activeItem} setActiveItem={setActiveItem} name="O mně" routeName="" />
-        <NavItem isSide activeItem={activeItem} setActiveItem={setActiveItem} name="Ceník" routeName="cenik" />
+        <NavItem isSide activeItem={activeItem} setActiveItem={setActiveItem} name="Ceník" routeName="price" />
         <NavItem isSide activeItem={activeItem} setActiveItem={setActiveItem} name="Kontakt" routeName="contact" />
       </ul>
     </div>

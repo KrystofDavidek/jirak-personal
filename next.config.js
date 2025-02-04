@@ -11,14 +11,6 @@ module.exports = {
         destination: '/about'
       },
       {
-        source: '/prvn%C3%AD-setk%C3%A1n%C3%AD',
-        destination: '/cenik'
-      },
-      {
-        source: '/m%C3%A1-praxe',
-        destination: '/practice'
-      },
-      {
         source: '/kontakt',
         destination: '/contact'
       }
