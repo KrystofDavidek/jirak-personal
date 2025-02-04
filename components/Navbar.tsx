@@ -84,7 +84,7 @@ const Navbar = () => {
       setActiveItem('O mně')
       return
     }
-    if (router.asPath === '/ceník') {
+    if (router.asPath === '/cen%C3%ADk') {
       setActiveItem('Ceník')
       return
     }
