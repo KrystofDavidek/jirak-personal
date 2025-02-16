@@ -21,7 +21,7 @@ const NavItem: FC<{ isSide?: boolean; activeItem: string; setActiveItem: Functio
   routeName,
   setActiveItem
 }) => {
-  const color = isSide ? 'border-black' : 'border-font-green'
+  const color = isSide ? 'text-[#9cc081]' : 'border-font-green'
 
   return activeItem !== name ? (
     <div>
@@ -31,7 +31,9 @@ const NavItem: FC<{ isSide?: boolean; activeItem: string; setActiveItem: Functio
             onClick={() => {
               setActiveItem(name)
             }}
-            className={`${!isSide ? 'hover:text-font-green' : 'hover:border-b-2 hover:border-black hover:pb-2'}`}>
+            className={`${
+              !isSide ? 'hover:text-font-green' : 'hover:border-b-2 text-[#9cc081] hover:border-[#9cc081] hover:pb-2'
+            }`}>
             {name}
           </span>
         </a>
@@ -40,10 +42,10 @@ const NavItem: FC<{ isSide?: boolean; activeItem: string; setActiveItem: Functio
   ) : (
     <>
       {isSide ? (
-        <div className={`pb-2 font-bold border-b-2 w-max ${color}`}>{name}</div>
+        <div className={`pb-2 w-max font-bold border-b-2 border-[#9cc081] ${color}`}>{name}</div>
       ) : (
         <div>
-          <div className={`border-b-2 font-bold pb-2 ${color}`}>{name}</div>
+          <div className={`pb-2 font-bold border-b-2 ${color}`}>{name}</div>
         </div>
       )}
     </>
@@ -98,12 +100,12 @@ const Navbar = () => {
 
   return (
     <nav className="flex pb-0 w-full pt-10 sm:pb-8 pl-4 md:pb-0 lg:justify-center pr-[2.5rem] 2xl:pr-[2.5rem]">
-      <div className="flex flex-col justify-center px-4 py-2 ml-6 mr-2 align-center">
-        <h1 className="text-center text-md md:text-[2rem] text-font-green font-bold">CERTIFIKOVANÝ MASÉR, HLINSKO</h1>
-        <h2 className="text-md md:text-[1.5rem] font-bold text-center">Bc. Martin Jirák</h2>
+      <div className="flex flex-col justify-center px-4 py-2 mr-2 ml-12 align-center">
+        <h1 className="text-center text-md md:text-[2.5rem] text-font-green font-bold">CERTIFIKOVANÝ MASÉR, HLINSKO</h1>
+        <h2 className="text-md text-center lg:text-left md:text-[1.5rem] font-bold ">Bc. Martin Jirák</h2>
       </div>
-      <div className="items-center hidden ml-auto align-middle lg:flex ">
-        <div className="items-center hidden ml-auto space-x-8 align-middle lg:flex ">
+      <div className="hidden items-center ml-auto align-middle lg:flex">
+        <div className="hidden items-center ml-auto text-[18px] space-x-8 align-middle lg:flex">
           <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="O mně" routeName="" />
           <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Ceník" routeName="price" />
           <NavItem activeItem={activeItem} setActiveItem={setActiveItem} name="Kontakt" routeName="contact" />
@@ -112,7 +114,7 @@ const Navbar = () => {
           <Image placeholder="blur" src={logoImg} alt="logo" />
         </div>
       </div>
-      <div className="w-8 h-8 mt-2 ml-auto mr-2 lg:hidden">
+      <div className="mt-2 mr-2 ml-auto w-8 h-8 lg:hidden">
         <HamburgerIcon isOpen={isSideMenuOpen} handleClick={toggleSideMenu} />
       </div>
 
@@ -123,7 +125,7 @@ const Navbar = () => {
 
 const SideMenu: FC<{ activeItem: string; setActiveItem: Function }> = ({ activeItem, setActiveItem }) => {
   return (
-    <div className="fixed top-0 left-0 z-20 w-1/2 h-screen p-4 bg-font-green/95 sm:w-1/4 lg:hidden">
+    <div className="fixed top-0 left-0 z-20 p-4 w-1/2 h-screen bg-[#29391e] sm:w-1/4 lg:hidden">
       <ul className="flex flex-col text-[1.5rem] gap-4">
         <NavItem isSide activeItem={activeItem} setActiveItem={setActiveItem} name="O mně" routeName="" />
         <NavItem isSide activeItem={activeItem} setActiveItem={setActiveItem} name="Ceník" routeName="price" />
@@ -143,16 +145,16 @@ type HamburgerIconProps = {
 const HamburgerIcon = ({ isOpen, handleClick }: HamburgerIconProps) => {
   const genericHamburgerLine = `h-1 w-6 my-1  bg-black transition ease transform duration-300`
   return (
-    <button className="flex flex-col items-center justify-center w-12 h-12 group" onClick={handleClick}>
+    <button className="flex flex-col justify-center items-center w-12 h-12 group" onClick={handleClick}>
       <div
         className={`${genericHamburgerLine} ${
-          isOpen ? 'rotate-45 translate-y-3 opacity-50 group-hover:opacity-100' : 'opacity-50 group-hover:opacity-100'
+          isOpen ? 'opacity-50 rotate-45 translate-y-3 group-hover:opacity-100' : 'opacity-50 group-hover:opacity-100'
         }`}
       />
       <div className={`${genericHamburgerLine} ${isOpen ? 'opacity-0' : 'opacity-50 group-hover:opacity-100'}`} />
       <div
         className={`${genericHamburgerLine} ${
-          isOpen ? '-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100' : 'opacity-50 group-hover:opacity-100'
+          isOpen ? 'opacity-50 -rotate-45 -translate-y-3 group-hover:opacity-100' : 'opacity-50 group-hover:opacity-100'
         }`}
       />
     </button>

@@ -34,61 +34,43 @@ const contact = () => {
         crossOrigin=""
       />
 
-      <div className="gap-4 p-10 m-4 bg-cover bg-motive bg-red ">
-        <div className="flex justify-center sm:h-[472px]">
-          <div className="w-full max-w-md text-center text-white">
-            <div className="space-y-6">
-              <div>
-                <h2 className="mb-3 text-4xl font-light">Kontakt</h2>
-                <p className="text-1xl">
-                  <a href="mailto: Martinn.jirakk@gmail.com">Martinn.jirakk@gmail.com</a>
-                </p>
-                <p className="text-1xl">
-                  <a href="tel:776311663">776 311 663</a>
-                </p>
-              </div>
-              <div>
-                <h2 className="mb-3 text-4xl font-light">Adresa</h2>
-                <p className="text-1xl">Nádražní 548, 539 01 Hlinsko</p>
-                <p className="text-1xl">Poliklinika Hlinsko</p>
-                <p className="text-1xl">2. NP naproti VZP</p>
-              </div>
-            </div>
+      <div className="flex flex-col gap-8 justify-center items-center p-10 m-4 bg-white lg:flex-row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10309.433796822646!2d15.906947!3d49.760514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dbb38983a9fcf%3A0xea0b27f2d2069a8d!2sU%20Tvrze%20334%2C%20539%2001%20Hlinsko%20v%20%C4%8Cech%C3%A1ch%201%2C%20Czechia!5e0!3m2!1sen!2sus!4v1739734758999!5m2!1sen!2sus"
+          width="500"
+          height="390"
+          loading="lazy"></iframe>
+        <div className="bg-[#29391e] text-white p-8 rounded-2xl shadow-lg w-[500px] text-center">
+          <h1 className="text-4xl font-bold tracking-wide text-white">KONTAKT</h1>
+          <p className="text-xl text-[#9cc081] mt-2 font-medium">Bc. Martin Jirák</p>
+          <div className="border-t border-[#9cc081] my-4"></div>
+
+          <div className="flex items-center justify-center gap-2 text-[#9cc081]">
+            <p className="text-lg">
+              Poliklinika Hlinsko
+              <br />
+              Nádražní 548
+            </p>
           </div>
+
+          <p className="text-[#9cc081] mt-4 text-xl font-semibold">Rezervace</p>
+
+          <div className="flex items-center justify-center gap-2 mt-2 text-lg text-[#9cc081]">
+            <p>
+              <a href="tel:775972333">+420 775 972 333</a>
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center gap-2 mt-2 text-lg text-[#9cc081]">
+            <p>
+              <a href="mailto: Martinn.jirakk@gmail.com">masazejirak@gmail.com</a>
+            </p>
+          </div>
+
+          <div className="border-t border-[#9cc081] my-4"></div>
+          <p className="text-sm text-[#9cc081]">Otevírací doba dle objednání</p>
         </div>
       </div>
-      {/* <div className="grid m-4 bg-cover xl:grid-cols-3 2xl:grid-cols-8 2xl:h-full bg-motive">
-        <div className="flex flex-col justify-between p-8 2xl:col-span-2">
-          <div className="text-white">
-            <p className="pb-4">Kontakt:</p>
-            <p>
-              <a href="mailto: Martinn.jirakk@gmail.com">Email: Martinn.jirakk@gmail.com</a>
-            </p>
-            <p className="pb-4">
-              <a href="tel:776311663">Tel: 776 311 663</a>
-            </p>
-
-            <p className="pb-4">Adresa:</p>
-
-            <p>Nádražní 548, 539 01 Hlinsko</p>
-            <p>Poliklinika Hlinsko</p>
-            <p>2. NP naproti VZP</p>
-          </div>
-        </div> */}
-      {/* <div className="relative 2xl:col-span-4" style={{ width: '100', height: '550px' }}>
-          <Image src={Map} placeholder="blur" alt="Mapa" objectPosition="center" objectFit="cover" layout={'fill'} />
-        </div>
-        <div className="relative 2xl:col-span-2" style={{ width: '100%', height: '550px' }}>
-          <Image
-            src={Outside}
-            placeholder="blur"
-            alt="Venkovní prostor"
-            objectPosition="center"
-            objectFit="cover"
-            layout={'fill'}
-          />
-        </div> */}
-      {/* </div> */}
     </div>
   )
 }

@@ -2,6 +2,7 @@ import 'tailwindcss/tailwind.css'
 import '../styles/globals.css'
 
 import { AppProps } from 'next/app'
+import Head from 'next/head'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
@@ -59,7 +60,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <main className="flex flex-col justify-between min-h-full sm:m-5">
           <Component {...pageProps} />
         </main>
-        <footer className="flex flex-wrap-reverse items-center justify-center gap-4 sm:mr-7 sm:ml-8 md:justify-between">
+        <footer className="flex flex-wrap-reverse gap-4 justify-center items-center sm:mr-7 sm:ml-8 md:justify-between">
           <div className="m-1">
             <p className="text-sm">© 2025 Kryštof Davídek</p>
           </div>
@@ -69,15 +70,15 @@ export default function App({ Component, pageProps }: AppProps) {
             } md:text-[1.5rem] font-bold flex-col items-center gap-4 m-1 md:items-start sm:flex-row`}>
             <p>
               <span>E-mail: </span>
-              <a href="mailto: Martinn.jirakk@gmail.com" className="text-font-green">
-                Martinn.jirakk@gmail.com
+              <a href="mailto: masazejirak@gmail.com" className="text-font-green">
+                masazejirak@gmail.com
               </a>
               <span>,</span>
             </p>
             <p>
               <span>Tel: </span>
-              <a href="tel:776311663" className="text-font-green">
-                776 311 663
+              <a href="tel:775972333" className="text-font-green">
+                775 972 333
               </a>
             </p>
           </div>
