@@ -36,7 +36,7 @@ const price = () => {
           <h1 className="text-4xl font-bold tracking-wide text-white">CENÍK</h1>
           <div className="border-t border-[#9cc081] my-4"></div>
 
-          <div className="grid grid-cols-2 grid-rows-2 gap-12">
+          <div className="flex-col grid-cols-2 grid-rows-2 gap-12 sm:grid">
             <div>
               <h2 className="mb-3 text-3xl text-[#9cc081] mt-2 font-medium">Relaxační masáž</h2>
               <p className="text-1xl">400 Kč/30 minut</p>
