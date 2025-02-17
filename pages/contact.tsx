@@ -36,7 +36,7 @@ const contact = () => {
 
       <div className="flex flex-col gap-8 justify-center items-center p-10 m-4 bg-white lg:flex-row">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10309.433796822646!2d15.906947!3d49.760514!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dbb38983a9fcf%3A0xea0b27f2d2069a8d!2sU%20Tvrze%20334%2C%20539%2001%20Hlinsko%20v%20%C4%8Cech%C3%A1ch%201%2C%20Czechia!5e0!3m2!1sen!2sus!4v1739734758999!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d41239.17727850866!2d15.8919202!3d49.7588184!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470dbb3db7a82da3%3A0xfca8559b587dc123!2zTsOhZHJhxb5uw60gNTQ4LCA1MzkgMDEgSGxpbnNrbyB2IMSMZWNow6FjaCAx!5e0!3m2!1sen!2scz!4v1739821763534!5m2!1sen!2scz"
           width={width && width > 700 ? '500' : 'auto'}
           height="390"
           loading="lazy"></iframe>
