@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: "https://www.psycholog-terapeut-brno.cz/",
-  generateRobotsTxt: true,
-};
+  siteUrl: 'https://www.masazejirak.cz/',
+  generateRobotsTxt: true
+}
