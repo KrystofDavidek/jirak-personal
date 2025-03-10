@@ -42,7 +42,7 @@ export default function Home() {
             </p>
 
             <p className="pb-4">
-              Věnuji se házené více než 20 let. a během své kariéry jsem působil jako hráč a masér v extralize házené. Díky tomu
+              Věnuji se házené více než 20 let a během své kariéry jsem působil jako hráč a masér v extralize házené. Díky tomu
               spojuji znalosti o lidském těle, sportu a regeneraci, abych mohl klientům nabídnout komplexní přístup ke zdraví a
               pohodě.
             </p>
@@ -74,7 +74,7 @@ export default function Home() {
           </p>
 
           <p className="pb-4">
-            Věnuji se házené více než 20 let. a během své kariéry jsem působil jako hráč a masér v extralize házené. Díky tomu
+            Věnuji se házené více než 20 let a během své kariéry jsem působil jako hráč a masér v extralize házené. Díky tomu
             spojuji znalosti o lidském těle, sportu a regeneraci, abych mohl klientům nabídnout komplexní přístup ke zdraví a
             pohodě.
           </p>
